@@ -1,7 +1,6 @@
 module.exports = function (router) {
 
     var userRoute = router.route('/');
-    var userRoute = router.route('/:id');
 
 
     userRoute.get(function (req, res) {
