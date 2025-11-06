@@ -27,7 +27,6 @@ module.exports = function (router) {
                 return res.status(400).json({message:"REQUEST ERROR",data:err});
             }
             res.status(500).json({message:"SERVER ERROR",data:err});
-
         }
     });
 
