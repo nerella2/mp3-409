@@ -15,8 +15,6 @@ module.exports = function (router) {
             const skip = req.query.skip ? parseInt(req.query.skip) : 0;
             const limit = req.query.limit ? parseInt(req.query.limit) : 0;
             const count = req.query.count === 'true';
-            console.log(where);
-            console.log(count);
             if (isNaN(skip) || isNaN(limit)) {
                 throw Error('Non-Integer Passed to Integer Argument');
             }
